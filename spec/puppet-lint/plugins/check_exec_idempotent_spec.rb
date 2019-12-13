@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'exec_idempotent' do
-  let(:msg) { 'exec resource should contain either unless or onlyif parameters' }
+  let(:msg) { 'exec resource should contain either the unless, onlyif, or refreshonly parameter' }
 
   context 'without any idempotent parameters set' do
     let(:code) { "exec{ '/bin/false':}" }

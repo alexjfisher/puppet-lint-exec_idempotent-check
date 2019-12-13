@@ -10,7 +10,7 @@ PuppetLint.new_check(:exec_idempotent) do
         next if not attr.empty?
         pos_token = resource[:tokens][0]
         notify :error, {
-          :message  => 'exec resource should contain either unless or onlyif parameters',
+          :message  => 'exec resource should contain either the unless, onlyif, or refreshonly parameter',
           :line     => pos_token.line,
           :column   => pos_token.column,
           :token    => pos_token,
