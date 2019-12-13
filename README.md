@@ -16,9 +16,10 @@ gem 'puppet-lint-exec_idempotent-check'
 ## Checks
 ### Validates that an exec resource is idempotent
 
-For an exec resource to pass it must be using at least one parameter that ensures idepotence. The value of the parameters is not checked. The parameters being looked for are
-"onlyif", "unless", and "refreshonly" as they are considered to this check to ensure idempotance. This check is of course opinionated, so to that end, the "creates" parameter is
-not accepted. This check does not view that parameter as a good practice.
+For an `exec` resource to pass it must be using at least one parameter that ensures idempotence. The value being passed to the parameter is not checked. The parameters this
+check will expect to find are one of "onlyif", "unless", or "refreshonly" as the use of any one of these is considered to ensure idempotance for the `exec` resource. This check
+is, of course, opinionated in that regard, and to that end the "creates" parameter is not considered acceptable. This check does not view the creates parameter as a good
+practice.
 
 #### Disabling the check
 To disable this check, you can add `--no-exec_idempotent-check` to your puppet-lint command line.
