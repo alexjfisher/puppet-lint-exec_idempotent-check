@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-exec_idempotent-check'
-  spec.version     = '0.0.4'
+  spec.version     = '0.0.5'
   spec.homepage    = 'https://github.com/trlinkin/puppet-lint-exec_idempotent-check'
   spec.license     = 'Apache-2.0'
   spec.author      = 'Tom Linkin'
